@@ -97,8 +97,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 112000000, guid: 1e1cec1af948eb143adf9abc61829f67,
-    type: 2}
+  m_LightingDataAsset: {fileID: 0}
   m_LightingSettings: {fileID: 4890085278179872738, guid: 75d3183536e7a604fa4d4ec3092543e3,
     type: 2}
 --- !u!196 &4
@@ -142,7 +141,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!108 &75965117
 Light:
   m_ObjectHideFlags: 0
@@ -575,7 +574,11 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7233071942463531127, guid: 971c439f25f6a4a2a9261c77cf6d8216,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1356391623}
   m_SourcePrefab: {fileID: 100100000, guid: 971c439f25f6a4a2a9261c77cf6d8216, type: 3}
 --- !u!1 &448978590
 GameObject:
@@ -1030,6 +1033,30 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
+--- !u!1 &1356391621 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7233071942463531127, guid: 971c439f25f6a4a2a9261c77cf6d8216,
+    type: 3}
+  m_PrefabInstance: {fileID: 340450011}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1356391623
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1356391621}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e82773fcf9fbc8c47bb8598ba051304c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minIntensity: 0.1
+  maxIntensity: 1
+  minDuration: 0.2
+  maxDuration: 0.5
+  minWaitTime: 0.2
+  maxWaitTime: 0.3
 --- !u!1 &1445912545
 GameObject:
   m_ObjectHideFlags: 0
